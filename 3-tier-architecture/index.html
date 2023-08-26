@@ -1,0 +1,118 @@
+<!-- Note: Fill API_ENDPOINT once API gateway is deployed -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Signup</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Additional CSS styles can go here */
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Student Registration Portal</h1>
+        <br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center">Student Signup</h3>
+                <form id="studentSignupForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" class="form-control" id="age" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <input type="text" class="form-control" id="country" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Signup</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center">List Students</h3>
+                <table id="studentsTable" class="table table-bordered mt-3">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Email</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows will be dynamically populated here -->
+                    </tbody>
+                </table>
+                <button id="listStudentsBtn" class="btn btn-info">List Students</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const API_ENDPOINT = ''; 
+
+        document.getElementById('studentSignupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let name = document.getElementById('name').value;
+            let age = document.getElementById('age').value;
+            let email = document.getElementById('email').value;
+            let country = document.getElementById('country').value;
+
+            fetch(API_ENDPOINT, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, age, email, country })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message || 'Student signed up successfully!');
+                // Clear the form
+                e.target.reset();
+            })
+            .catch(error => {
+                alert('Error: ' + error);
+            });
+        });
+
+        document.getElementById('listStudentsBtn').addEventListener('click', function() {
+            fetch(API_ENDPOINT)
+            .then(response => response.json())
+            .then(students => {
+                let tableBody = document.querySelector('#studentsTable tbody');
+                tableBody.innerHTML = ''; // Clear existing rows
+
+                for (let student of students) {
+                    let row = tableBody.insertRow();
+                    row.insertCell().textContent = student.name;
+                    row.insertCell().textContent = student.age;
+                    row.insertCell().textContent = student.email;
+                    row.insertCell().textContent = student.country;
+                }
+            })
+            .catch(error => {
+                alert('Error fetching students: ' + error);
+            });
+        });
+    </script>
+</body>
+
+</html>

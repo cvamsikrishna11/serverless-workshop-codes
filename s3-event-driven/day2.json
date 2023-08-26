@@ -1,0 +1,72 @@
+[
+    {
+        "id": "011",
+        "name": "Deep Learning Specialization",
+        "URL": "https://example.com/course/deep-learning",
+        "actualPrice": 209.99,
+        "discountedPrice": 15.99
+    },
+    {
+        "id": "012",
+        "name": "Design Patterns in C#",
+        "URL": "https://example.com/course/design-patterns-csharp",
+        "actualPrice": 159.99,
+        "discountedPrice": 12.99
+    },
+    {
+        "id": "013",
+        "name": "Blockchain and Cryptocurrency Explained",
+        "URL": "https://example.com/course/blockchain-crypto",
+        "actualPrice": 179.99,
+        "discountedPrice": 13.99
+    },
+    {
+        "id": "014",
+        "name": "Complete Photography Masterclass",
+        "URL": "https://example.com/course/photography-masterclass",
+        "actualPrice": 189.99,
+        "discountedPrice": 16.99
+    },
+    {
+        "id": "015",
+        "name": "Docker and Kubernetes Bootcamp",
+        "URL": "https://example.com/course/docker-kubernetes",
+        "actualPrice": 199.99,
+        "discountedPrice": 17.99
+    },
+    {
+        "id": "016",
+        "name": "Unity Game Development",
+        "URL": "https://example.com/course/unity-game-development",
+        "actualPrice": 149.99,
+        "discountedPrice": 10.99
+    },
+    {
+        "id": "017",
+        "name": "Advanced CSS and Sass",
+        "URL": "https://example.com/course/css-sass",
+        "actualPrice": 129.99,
+        "discountedPrice": 9.99
+    },
+    {
+        "id": "018",
+        "name": "Ethical Hacking Bootcamp",
+        "URL": "https://example.com/course/ethical-hacking",
+        "actualPrice": 199.99,
+        "discountedPrice": 14.99
+    },
+    {
+        "id": "019",
+        "name": "Complete Network Certification Training",
+        "URL": "https://example.com/course/network-certification",
+        "actualPrice": 219.99,
+        "discountedPrice": 18.99
+    },
+    {
+        "id": "020",
+        "name": "Advanced JavaScript Concepts",
+        "URL": "https://example.com/course/advanced-javascript",
+        "actualPrice": 139.99,
+        "discountedPrice": 11.99
+    }
+]

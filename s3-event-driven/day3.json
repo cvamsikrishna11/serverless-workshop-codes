@@ -1,0 +1,72 @@
+[
+    {
+        "id": "021",
+        "name": "Modern React with Redux",
+        "URL": "https://example.com/course/react-redux",
+        "actualPrice": 169.99,
+        "discountedPrice": 12.99
+    },
+    {
+        "id": "022",
+        "name": "Angular - The Complete Guide",
+        "URL": "https://example.com/course/angular-guide",
+        "actualPrice": 189.99,
+        "discountedPrice": 14.99
+    },
+    {
+        "id": "023",
+        "name": "Vue JS 2 - The Complete Guide",
+        "URL": "https://example.com/course/vuejs-guide",
+        "actualPrice": 159.99,
+        "discountedPrice": 13.99
+    },
+    {
+        "id": "024",
+        "name": "Mastering the Art of Drawing",
+        "URL": "https://example.com/course/art-of-drawing",
+        "actualPrice": 119.99,
+        "discountedPrice": 9.99
+    },
+    {
+        "id": "025",
+        "name": "Introduction to Cloud Computing",
+        "URL": "https://example.com/course/cloud-computing",
+        "actualPrice": 149.99,
+        "discountedPrice": 11.99
+    },
+    {
+        "id": "026",
+        "name": "AWS Certified Solutions Architect",
+        "URL": "https://example.com/course/aws-architect",
+        "actualPrice": 209.99,
+        "discountedPrice": 17.99
+    },
+    {
+        "id": "027",
+        "name": "Mastering Git and GitHub",
+        "URL": "https://example.com/course/git-github",
+        "actualPrice": 129.99,
+        "discountedPrice": 10.99
+    },
+    {
+        "id": "028",
+        "name": "The Science of Well-Being",
+        "URL": "https://example.com/course/well-being",
+        "actualPrice": 109.99,
+        "discountedPrice": 8.99
+    },
+    {
+        "id": "029",
+        "name": "Python for Data Science and Machine Learning",
+        "URL": "https://example.com/course/python-data-science",
+        "actualPrice": 179.99,
+        "discountedPrice": 14.99
+    },
+    {
+        "id": "030",
+        "name": "Complete Blender Creator Course",
+        "URL": "https://example.com/course/blender-creator",
+        "actualPrice": 139.99,
+        "discountedPrice": 11.99
+    }
+]

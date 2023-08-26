@@ -1,0 +1,72 @@
+[
+    {
+        "id": "031",
+        "name": "Advanced JavaScript and ES6",
+        "URL": "https://example.com/course/js-es6",
+        "actualPrice": 149.99,
+        "discountedPrice": 10.99
+    },
+    {
+        "id": "032",
+        "name": "The Ultimate Node.js Developer Course",
+        "URL": "https://example.com/course/nodejs",
+        "actualPrice": 199.99,
+        "discountedPrice": 15.99
+    },
+    {
+        "id": "033",
+        "name": "Deep Dive into CSS and Flexbox",
+        "URL": "https://example.com/course/css-flexbox",
+        "actualPrice": 119.99,
+        "discountedPrice": 9.99
+    },
+    {
+        "id": "034",
+        "name": "Mastering 3D Animation",
+        "URL": "https://example.com/course/3d-animation",
+        "actualPrice": 159.99,
+        "discountedPrice": 12.99
+    },
+    {
+        "id": "035",
+        "name": "Cloud Infrastructure with Azure",
+        "URL": "https://example.com/course/azure",
+        "actualPrice": 189.99,
+        "discountedPrice": 14.99
+    },
+    {
+        "id": "036",
+        "name": "Google Cloud Architect Certification",
+        "URL": "https://example.com/course/gcp-architect",
+        "actualPrice": 219.99,
+        "discountedPrice": 19.99
+    },
+    {
+        "id": "037",
+        "name": "The Ultimate Docker Course",
+        "URL": "https://example.com/course/docker",
+        "actualPrice": 139.99,
+        "discountedPrice": 11.99
+    },
+    {
+        "id": "038",
+        "name": "Principles of UI/UX Design",
+        "URL": "https://example.com/course/uiux",
+        "actualPrice": 129.99,
+        "discountedPrice": 10.99
+    },
+    {
+        "id": "039",
+        "name": "Advanced Data Analysis with R",
+        "URL": "https://example.com/course/data-r",
+        "actualPrice": 169.99,
+        "discountedPrice": 13.99
+    },
+    {
+        "id": "040",
+        "name": "Complete Guide to Game Development",
+        "URL": "https://example.com/course/game-dev",
+        "actualPrice": 179.99,
+        "discountedPrice": 15.99
+    }
+]
